@@ -19,15 +19,12 @@ const Header = () => {
           <nav>
             <ul className="flex space-x-4">
               <li>
-                <Link to="/" className="hover:text-yellow-400 transition">
+                <Link to="/" className="hover:text-red-400 transition">
                   Home
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/products"
-                  vclassName="hover:text-yellow-400 transition"
-                >
+                <Link to="/products" vclassName="hover:text-red-400 transition">
                   Products
                 </Link>
               </li>
@@ -41,14 +38,14 @@ const Header = () => {
           </Link>
           <Link
             to="/signup"
-            className="flex items-center space-x-1 hover:text-yellow-400 transition"
+            className="flex items-center space-x-1 hover:text-red-400 transition"
           >
             <FontAwesomeIcon icon={faSignInAlt} />
             <span>Sign up</span>
           </Link>
           <Link
             to="/signin"
-            className="flex items-center space-x-1 hover:text-yellow-400 transition"
+            className="flex items-center space-x-1 hover:text-red-400 transition"
           >
             <FontAwesomeIcon icon={faUser} />
             <span>Login</span>

@@ -1,54 +1,45 @@
-import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className="bg-[#26202e] text-white py-10">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            {/* Column 1 */}
-            <div>
-              <p className="text-white-300 mt-2">
-                Learn more about our mission and values.
-              </p>
-              <a
-                href="#"
-                className="text-red-400 hover:underline mt-2 inline-block"
-              >
-                See Details
-              </a>
-            </div>
-
-            {/* Column 2 */}
-            <div>
-              <p className="text-white-300 mt-2">
-                Discover the services we offer to help you.
-              </p>
-              <a
-                href="#"
-                className="text-red-400 hover:underline mt-2 inline-block"
-              >
-                Explore
-              </a>
-            </div>
-
-            {/* Column 3 */}
-            <div>
-              <p className="text-white-300 mt-2">
-                Get in touch with our support team.
-              </p>
-              <a
-                href="#"
-                className="text-red-400 hover:underline mt-2 inline-block"
-              >
-                Buy Now
-              </a>
-            </div>
-          </div>
+    <footer className="bg-gray-900 text-white py-4 mt-8">
+      <div className="container mx-auto flex justify-between items-center px-6">
+        <p className="text-sm">
+          &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+        </p>
+        <div className="flex space-x-4">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500"
+          >
+            <FontAwesomeIcon icon={faFacebook} className="text-xl" />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400"
+          >
+            <FontAwesomeIcon icon={faTwitter} className="text-xl" />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-500"
+          >
+            <FontAwesomeIcon icon={faInstagram} className="text-xl" />
+          </a>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 };
-
 export default Footer;
